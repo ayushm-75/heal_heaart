@@ -6,7 +6,13 @@ const Header = () => {
     <header className="site-header">
       <div className="container header-container">
         <div className="logo">
-          <a href="#"><img src="/logo.png" alt="HEAL HEAART Logo" className="header-logo-img" /></a>
+          <a href="#">
+            <img 
+              src={`${import.meta.env.BASE_URL}logo.png`} 
+              alt="HEAL HEAART Logo" 
+              className="header-logo-img" 
+            />
+          </a>
         </div>
         <nav className="main-nav">
           <a href="#problem">The Gap</a>

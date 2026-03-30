@@ -3,6 +3,8 @@ import './OurSolution.css';
 import { ArrowRight } from 'lucide-react';
 
 const OurSolution = () => {
+  const base = import.meta.env.BASE_URL;
+
   return (
     <section id="solution" className="section-padding solution-section">
       <div className="container">
@@ -19,7 +21,11 @@ const OurSolution = () => {
           </a>
           
           <div className="founder-section">
-            <img src="/founder_portrait.png" alt="CEO and Founder of HEAL HEAART" className="founder-photo" />
+            <img 
+              src={`${base}founder_portrait.png`} 
+              alt="CEO and Founder of HEAL HEAART" 
+              className="founder-photo" 
+            />
             <div className="founder-info">
               <h3>CEO & Founder</h3>
               <p>HEAL HEAART</p>
