@@ -1,0 +1,31 @@
+.vision-section {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white;
+  text-align: center;
+}
+
+.vision-quote {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 500;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  line-height: 1.4;
+}
+
+.vision-quote::before, .vision-quote::after {
+  content: '';
+}
+
+.vision-goal {
+  font-size: 1.25rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .vision-quote {
+    font-size: 1.8rem;
+  }
+}

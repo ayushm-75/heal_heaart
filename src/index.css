@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Color Palette Updated: Orange, Peach, Dark Green */
+  --primary: #2b4c3e;       /* Dark Green */
+  --primary-light: #3e6b57; /* Lighter Dark Green */
+  --primary-dark: #1f362c;  /* Deepest Green */
+  --secondary-bg: #fdf5f0;  /* Very Light Peach background */
+  --surface: #FFFFFF;       /* Crisp White */
+  --accent: #e87a5d;        /* Orange */
+  --accent-light: #f9d8c4;  /* Peach */
+  --text-primary: #1f362c;  /* Dark Green text */
+  --text-secondary: #5a7566;/* Muted Green text */
+  --border-light: #ebd6c8;
+  
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Layout & Scaling */
+  --border-radius-base: 12px;
+  --border-radius-lg: 24px;
+  --transition-base: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --shadow-sm: 0 4px 12px rgba(44, 62, 80, 0.05);
+  --shadow-lg: 0 12px 30px rgba(44, 62, 80, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--secondary-bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition-base);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: var(--font-body);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Glassmorphism & Micro-animations */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--border-radius-lg);
+}
+
+.section-padding {
+  padding: 6rem 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+::selection {
+  background-color: var(--accent-light);
+  color: var(--primary-dark);
+}
