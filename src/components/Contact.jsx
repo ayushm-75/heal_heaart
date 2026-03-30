@@ -34,7 +34,7 @@ const Contact = () => {
       <div className="footer-bottom">
         <p>A step toward creating a world where no one feels alone.</p>
         <p>&copy; {new Date().getFullYear()} HEAL HEAART. All Rights Reserved.</p>
-        <p>Designed by <a href="https://ayushm-75.github.io/" target="_blank" rel="noopener noreferrer">Ayush Mallick</a></p>
+        <p>Designed by Ayush Mallick</p>
       </div>
     </footer>
   );
