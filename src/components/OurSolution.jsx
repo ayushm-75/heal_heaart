@@ -16,9 +16,6 @@ const OurSolution = () => {
           <p className="solution-description">
             By uniting medical insights with psychological support, we aim to break the stigma and build a compassionate, informed society that recognizes every form of struggle.
           </p>
-          <a href="#mission" className="solution-link">
-            Learn more about our mission <ArrowRight size={20} />
-          </a>
           
           <div className="founder-section">
             <img 
