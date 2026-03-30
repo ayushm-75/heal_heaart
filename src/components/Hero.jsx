@@ -21,9 +21,9 @@ const Hero = () => {
           A platform dedicated to mental and chronic health awareness, support, and understanding. You don't have to carry the weight alone.
         </p>
 
-        <button className="primary-cta glass-panel">
+        <a href="#contact" className="primary-cta glass-panel">
           Join Our Community
-        </button>
+        </a>
       </div>
     </section>
   );
